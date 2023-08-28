@@ -16,6 +16,9 @@ elif operation == 'Substract':
 elif operation == 'Multiply':
     st.write(num1*num2)
 elif operation == 'Divide':
-    st.write(num1/num2)
+    if num2!=0:
+        st.write(num1/num2)
+    else:
+        st.warning("Zero division")
 else:
     st.write('No operation added')
